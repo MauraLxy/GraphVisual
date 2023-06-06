@@ -1,0 +1,103 @@
+{
+    "nodes": {
+        "datasets": [
+            {
+                "authors_list": "A",
+                "datacite_type": "dataset",
+                "doi": "1",
+                "key": "/1",
+                "publication_year": "1001",
+                "r_number": "1",
+                "title": "A1"
+            }
+        ],
+        "grants": [
+            {
+                "end_year": "2",
+                "funder": "B",
+                "grant_id": "2",
+                "key": "/2",
+                "start_year": "1002",
+                "title": "B2"
+            }
+        ],
+        "organisations": [
+            {
+                "country": "C",
+                "grid": "3",
+                "isni": "3",
+                "key": "/3",
+                "lang": "en",
+                "latitude": "3",
+                "longitude": "3",
+                "name": "C",
+                "r_number": "3",
+                "ror": "3",
+                "url": "//C"
+            }
+        ],
+        "publications": [
+            {
+                "authors_list": "D",
+                "datacite_type": "article",
+                "doi": "4",
+                "key": "/4",
+                "publication_year": "1004",
+                "r_number": "4",
+                "title": "D"
+            }
+        ],
+        "researchers": [
+            {
+                "first_name": "E",
+                "full_name": "E",
+                "key": "/5",
+                "last_name": "E",
+                "orcid": "5",
+                "r_number": "5",
+                "scopus_author_id": "5"
+            },
+            {
+                "first_name": "F",
+                "full_name": "F",
+                "key": "/6",
+                "last_name": "F",
+                "orcid": "6",
+                "r_number": "6",
+                "scopus_author_id": "6"
+            }
+        ]
+    },
+    "relationships": {
+        "researcher-dataset": [
+            {
+                "from": "/5",
+                "to": "/1"
+            }
+        ],
+        "researcher-grant": [
+            {
+                "from": "/5",
+                "to": "/2"
+            }
+        ],
+        "researcher-organisation": [
+            {
+                "from": "/5",
+                "to": "/3"
+            }
+        ],
+        "researcher-publication": [
+            {
+                "from": "/5",
+                "to": "/4"
+            }
+        ],
+        "researcher-researcher": [
+            {
+                "from": "/5",
+                "to": "/6"
+            }
+        ]
+    }
+}
